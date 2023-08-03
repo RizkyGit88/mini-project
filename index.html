@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Travel Web</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <img src="assets\Logo.jpeg" height="60px" class="logo">
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Daftar Layanan</a></li>
+                    <li><a href="/">Kontak Kami</a></li>
+                </div>
+            </ul>
+            </div>
+        </nav>
+        <!-- HOMPAGE TITLE -->
+        <div class="background">
+            <div id="WebTitle">
+                <h1>TRAVEL LINTAS BERKAH</h1>
+                <h3 class="subtitle">Melayani Seindah Liburan Anda</h3>
+            </div>
+    </header>
+
+    <!-- BAGIAN ISI WEB -->
+    <main>
+        <section id="contactus">
+            <article id="article">
+                <h2>Sekilas Pandang Tentang Kami</h2>
+
+                <div class="container">
+                    <div class="content-slide">
+                        <div class="imgslide fade">
+                            <div class="numberslide">1 / 3</div>
+                            <img src="assets/wisata1.jpg" class="img-slide">
+                            <div class="text">Nikmati Destinasi Liburan Anda</div>
+                        </div>
+
+                        <div class="imgslide fade">
+                            <div class="numberslide">2 / 3</div>
+                            <img src="assets/wisata2.jpg" class="img-slide">
+                            <div class="text">Pemandangan Yang Menakjubkan</div>
+                        </div>
+
+                        <div class="imgslide fade">
+                            <div class="numberslide">3 / 3</div>
+                            <img src="assets/wisata4.jpg" class="img-slide">
+                            <div class="text">Keindahan Yang Tiada Tara</div>
+                        </div>
+
+                        <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+                        <a class="next" onClick="nextslide(1)">&#10095;</a>
+                    </div>
+
+                    <div class="page">
+                        <span class="dot" onClick="dotslide(1)"></span>
+                        <span class="dot" onClick="dotslide(2)"></span>
+                        <span class="dot" onClick="dotslide(3)"></span>
+                    </div>
+                </div>
+
+                <p>Layanan travel kami adalah layanan travel yang terpercaya sampai sekarang. Dimana kami telah mengantarkan ribuan orang menuju destinasi pilihan mereka. Layanan unggulan kami sangat menarik dan Profesional
+                </p>
+
+            </article>
+            <!-- FORM ACTION -->
+            <section id="form-login">
+                <form name="formPendaftaran" action="#" method="POST" onSubmit="return validateForm()">
+                    <div>
+                        <h3>Daftar Sekarang Juga</h3>
+                        <p>Tim Kami akan menghubungi anda setelah mendaftar diri maksimal 2x24 Jam di Hari Kerja</p>
+
+                        <label>Nama Lengkap:</label>
+                        <input type="text" placeholder="Nama Lengkap Anda" name="nama" class="form-control" />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" placeholder="Email Anda" name="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Domisili:</label>
+                        <select name="jurusan" class="form-control">
+                                    <option value="0">Pilih Domisili Anda</option>
+                                    <option value="1">Sumatera Utara</option>
+                                    <option value="2">Sumatera Barat</option>
+                                    <option value="3">Sumatera Selatan</option>
+                        </select>
+                </form>
+                <div>
+                    <input type="submit" value="Daftar" class="tombol">
+                </div>
+            </section>
+        </section>
+
+        <ol class="border">
+            <li>Pelayanan Terbaik<br/>Kami memiliki fasilitas yang baik dan nyaman</li>
+            <li>Harga Terjangkau<br/>Travel kami berkualitas dengan harga terjangkau</li>
+            <li>Aman dan Nyaman<br/>Dengan keamanan dan kebersihan yang kami terapkan secara ketat kepada pelanggan</li>
+            <li>Terdepan<br/>Melayani anda dengan sepenuh hati menjadi selalu terdepan untuk kami</li>
+        </ol>
+
+
+        <!-- SERVICES SECTION -->
+        <section class="container_service">
+
+            <h1 class="services_taital">Destinasi</h1>
+            <p class="services_text">Destinasi Travel Pilihan Kami di Dalam Negeri</p>
+
+            <div class="services_section_2">
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Bali</h3>
+                    <p class="tation_text">Dengan Keindahan Pantai nya</p>
+                </div>
+
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Jakarta</h3>
+                    <p class="tation_text">Pemandangan Tugu Monumen Nasional yang Memukau</p>
+                </div>
+
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Medan</h3>
+                    <p class="tation_text">Keindahan dan Kesejukan Danau Toba yang luar biasa</p>
+                </div>
+            </div>
+
+            <div class="services_section_2">
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Yogyakarta</h3>
+                    <p class="tation_text">Dikenal dengan kota pelajar, budaya serta Wisata</p>
+                </div>
+
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Bandung</h3>
+                    <p class="tation_text">Bandung Sebagai Paris van Java</p>
+                </div>
+
+                <div class="box_main active">
+                    <div class="house_icon">
+                        <img src="assets\icon map.png" class="image_1">
+                        <img src="assets\icon map.png" class="image_2">
+                    </div>
+                    <h3 class="decorate_text">Aceh</h3>
+                    <p class="tation_text">Spot wisata yang indah di Sabang</p>
+                </div>
+            </div>
+        </section>
+        <!-- END OF SERVICE SECTION -->
+
+        <h1 class="services_taital2">Pesan Sekarang</h1>
+        <p class="services_text">Pesan kursi anda sekarang untuk menikmati berbagai keindahan wisata lokal.<br/> Jangan tunda liburan anda selagi masih ada kesempatan untuk menikmatinya
+        </p>
+
+        <div class="send_btn">
+            <div type="text" class="main_bt"><a href="index.html">BOOK NOW</a></div>
+        </div>
+
+        <!-- COPYRIGT SECTION -->
+        <div class="copyright_section">
+            <div class="container">
+                <p class="copyright_text">2023 All Rights Reserved.<br/><a>Privacy Policy</a></p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
